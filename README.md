@@ -14,20 +14,20 @@ I am transitioning from "code monkey" implementation to **Architectural Leadersh
 
 | Category | technologies |
 | :--- | :--- |
-| **Mobile** | Flutter, Dart, BLOC, Clean Architecture, Riverpod, Fastlane[cite: 1] |
-| **Web** | React, Next.js (Learning), Tailwind CSS, Framer Motion, Radix UI[cite: 1] |
-| **DevOps** | GitHub Actions, Docker, CI/CD Pipelines, Multi-env Deployment[cite: 1] |
-| **Backend** | Firebase, Supabase, REST APIs, OAuth2, IAM Flows[cite: 1] |
-| **AI/ML** | Google Gemini API (1.5 Flash/Pro), Multimodal Image & Text Analysis[cite: 1] |
+| **Mobile** | Flutter, Dart, BLOC, Clean Architecture, Riverpod, Fastlane |
+| **Web** | React, Next.js (Learning), Tailwind CSS, Framer Motion, Radix UI |
+| **DevOps** | GitHub Actions, Docker, CI/CD Pipelines, Multi-env Deployment |
+| **Backend** | Firebase, Supabase, REST APIs, OAuth2, IAM Flows |
+| **AI/ML** | Google Gemini API (1.5 Flash/Pro), Multimodal Image & Text Analysis |
 
 ---
 
 ### 🌟 Featured Impact
 
-*   **American Express KSA**: Architected a production banking app with RTL/Arabic UI, enterprise API integrations, and zero-downtime CI/CD[cite: 1].
-*   **Zaiqa (AI Culinary App)**: Developed an AI-powered app that uses Gemini to analyze ingredients and provide cultural heritage insights[cite: 1].
-*   **WETrends**: Engineered a short-form video platform featuring custom video players and high-performance streaming[cite: 1].
-*   **POS AI System**: Integrated AI-driven product scanning and inventory tracking into a cross-platform POS application[cite: 1].
+*   **American Express KSA**: Architected a production banking app with RTL/Arabic UI, enterprise API integrations, and zero-downtime CI/CD.
+*   **Zaiqa (AI Culinary App)**: Developed an AI-powered app that uses Gemini to analyze ingredients and provide cultural heritage insights.
+*   **WETrends**: Engineered a short-form video platform featuring custom video players and high-performance streaming.
+*   **POS AI System**: Integrated AI-driven product scanning and inventory tracking into a cross-platform POS application.
 
 ---
 
@@ -38,8 +38,8 @@ I am transitioning from "code monkey" implementation to **Architectural Leadersh
 ---
 
 ### 📬 Connect With Me
-*   **Portfolio:** [faizanullah.dev](https://faizanullah.dev)[cite: 1]
-*   **LinkedIn:** [linkedin.com/in/faizanullah1](https://www.linkedin.com/in/faizanullah1)[cite: 1]
-*   **Location:** Rawalpindi, Pakistan (Open to Remote/Relocation)[cite: 1]
+*   **Portfolio:** [faizanullah.dev](https://faizanullah.dev)
+*   **LinkedIn:** [linkedin.com/in/faizanullah1](https://www.linkedin.com/in/faizanullah1)
+*   **Location:** Rawalpindi, Pakistan (Open to Remote/Relocation)
 
 *"Building products, not just code."*
