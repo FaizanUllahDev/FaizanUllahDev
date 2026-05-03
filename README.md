@@ -31,10 +31,12 @@ I am transitioning from "code monkey" implementation to **Architectural Leadersh
 
 ---
 
-### 📊 My GitHub Stats
-![Faizan's GitHub stats](https://github-readme-stats.vercel.app/api?username=FaizanUllahDev&show_icons=true&theme=dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FaizanUllahDev&layout=compact&theme=dark)
-
+### 📊 GitHub Metrics
+&nbsp;
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=FaizanUllahDev&show_icons=true&theme=radical" alt="Faizan's Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FaizanUllahDev&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 ---
 
 ### 📬 Connect With Me
