@@ -47,7 +47,7 @@ These are professional product experiences; proprietary source code is not publi
 <a href="https://github.com/FaizanUllahDev?tab=repositories"><img alt="48 repositories accessible to account" src="https://img.shields.io/badge/Repositories-48-2563EB?style=for-the-badge"></a>
 <img alt="27 public repositories" src="https://img.shields.io/badge/Public-27-0F766E?style=for-the-badge">
 <img alt="21 private repositories" src="https://img.shields.io/badge/Private-21-64748B?style=for-the-badge">
-<a href="https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev"><img alt="Authored PRs from all accessible repositories: currently 9" src="https://img.shields.io/badge/Authored%20PRs-9-7C3AED?style=for-the-badge"></a>
+<a href="https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev"><img alt="Authored PRs from all accessible repositories: currently 10" src="https://img.shields.io/badge/Authored%20PRs-10-7C3AED?style=for-the-badge"></a>
 
 <br><br>
 
