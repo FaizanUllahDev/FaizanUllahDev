@@ -61,16 +61,7 @@ Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard p
 
 <div align="center">
 
-<table>
-<tr>
-<td width="43%" align="center" valign="top">
-<a href="https://github.com/FaizanUllahDev?tab=repositories"><img width="100%" alt="Programming language distribution across public GitHub repositories" src="https://ghstats.dev/api/langs?username=FaizanUllahDev&layout=bar&max_langs=7&theme=tokyonight"></a>
-</td>
-<td width="57%" align="center" valign="top">
-<a href="https://github.com/FaizanUllahDev"><img width="100%" alt="Automatically updated authorized public and private repositories, authored PRs, and year-to-date commits" src="./assets/github-metrics.svg"></a>
-</td>
-</tr>
-</table>
+<a href="https://github.com/FaizanUllahDev"><img width="78%" alt="Automatically updated GitHub Stats across authorized public and private repositories" src="./assets/github-metrics.svg"></a>
 
 **Contribution activity · last 90 days (public data)**
 
@@ -78,7 +69,7 @@ Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard p
 
 </div>
 
-<sub>The stats card updates from [GitHub Actions](.github/workflows/profile-metrics.yml) using your authorized token. It aggregates public and accessible private repositories without publishing private names, contents, or individual activity. **Commits YTD** counts authored commits on accessible default branches since January 1, not every branch or every GitHub contribution. The language chart and 90-day trend use a separate public-data provider; both may be cached. The circular activity tier is computed from documented commit/PR thresholds rather than inferred code quality.</sub>
+<sub>The stats card updates from [GitHub Actions](.github/workflows/profile-metrics.yml) using your authorized token. It aggregates public and accessible private repositories without publishing private names, contents, or individual activity. **Commits YTD** counts authored commits on accessible default branches since January 1, not every branch or every GitHub contribution. The 90-day public activity trend uses a separate data provider and may be cached. The circular activity tier is computed from documented commit/PR thresholds rather than inferred code quality.</sub>
 
 
 **Activity tier:** A+ means at least 200 authored default-branch commits this year **and** 25 authored PRs; A means 100 commits and 10 PRs; B means 25 commits or 5 PRs; otherwise C. This is an illustrative activity tier, **not a GitHub-issued rating or a code-quality assessment**.
