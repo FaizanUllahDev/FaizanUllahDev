@@ -1,20 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="540" height="288" viewBox="0 0 540 288" role="img" aria-label="Authenticated GitHub engineering activity">
-<rect x="1" y="1" width="538" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
-<text x="23" y="35" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#e6edf3">GitHub Stats</text>
-<text x="23" y="54" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authorized public + private activity</text>
-<text x="28" y="84" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Repositories</text>
-<text x="498" y="86" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">48</text>
-<path d="M23 93 H517" stroke="#30363d" stroke-width="1"/>
-<text x="28" y="117" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Public</text>
-<text x="498" y="119" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">29</text>
-<path d="M23 126 H517" stroke="#30363d" stroke-width="1"/>
-<text x="28" y="150" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Private</text>
-<text x="498" y="152" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">19</text>
-<path d="M23 159 H517" stroke="#30363d" stroke-width="1"/>
-<text x="28" y="183" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Authored PRs</text>
-<text x="498" y="185" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">45</text>
-<path d="M23 192 H517" stroke="#30363d" stroke-width="1"/>
-<text x="28" y="216" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Commits YTD</text>
-<text x="498" y="218" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">241</text>
-<text x="23" y="271" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Updated 29 Oct 2026 11:30 UTC  |  commits on default branches</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="288" viewBox="0 0 620 288" role="img" aria-label="Authenticated GitHub statistics and activity tier">
+<rect x="1" y="1" width="618" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<text x="26" y="41" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#e6edf3">GitHub Stats</text>
+<text x="26" y="65" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Authorized public + private activity</text>
+<text x="34" y="105" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Repositories</text>
+<text x="325" y="107" text-anchor="end" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">48</text>
+<text x="34" y="143" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Public / private</text>
+<text x="325" y="145" text-anchor="end" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">29 / 19</text>
+<text x="34" y="181" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Commits YTD</text>
+<text x="325" y="183" text-anchor="end" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">241</text>
+<text x="34" y="219" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Authored PRs</text>
+<text x="325" y="221" text-anchor="end" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">45</text>
+<circle cx="487" cy="142" r="70" fill="none" stroke="#30363d" stroke-width="13"/>
+<circle cx="487" cy="142" r="70" fill="none" stroke="#79c0ff" stroke-width="13" stroke-dasharray="330 440" transform="rotate(-90 487 142)" stroke-linecap="round"/>
+<text x="487" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#e6edf3">A+</text>
+<text x="487" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Activity tier</text>
+<text x="26" y="272" font-family="Arial,sans-serif" font-size="11" fill="#8b949e">Updated 29 Oct 2026 11:30 UTC · default-branch commits</text>
 </svg>
