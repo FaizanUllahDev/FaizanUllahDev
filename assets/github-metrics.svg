@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="890" height="240"><rect width="890" height="240" rx="16" fill="#0d1117"/><text x="28" y="75" fill="#e6edf3" font-family="Arial,sans-serif" font-size="23">GitHub engineering activity</text><text x="28" y="125" fill="#c9d1d9" font-family="Arial,sans-serif" font-size="17">Awaiting first authenticated refresh</text><text x="28" y="165" fill="#8b949e" font-family="Arial,sans-serif" font-size="13">Configure GH_METRICS_TOKEN Actions secret</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="890" height="240" viewBox="0 0 890 240" role="img" aria-label="Aggregated GitHub activity">
+<rect x="1" y="1" width="888" height="238" rx="16" stroke="#30363d" stroke-width="2" fill="#0d1117"/>
+<text x="28" y="38" font-size="21" font-family="Arial,sans-serif" font-weight="bold" fill="#e6edf3">GitHub engineering activity</text>
+<rect x="28" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
+<text x="108" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">48</text>
+<text x="108" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Repositories</text>
+<rect x="200" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
+<text x="280" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">29</text>
+<text x="280" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Public</text>
+<rect x="372" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
+<text x="452" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">19</text>
+<text x="452" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Private</text>
+<rect x="544" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
+<text x="624" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">45</text>
+<text x="624" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Authored PRs</text>
+<rect x="716" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
+<text x="796" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">241</text>
+<text x="796" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Commits YTD</text>
+<text x="28" y="215" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authenticated aggregates · Default-branch commits authored since Jan 1 · Updated 29 Oct 2026 11:30 UTC</text>
+</svg>
