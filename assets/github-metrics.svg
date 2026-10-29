@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="890" height="240" viewBox="0 0 890 240" role="img" aria-label="Aggregated GitHub activity">
-<rect x="1" y="1" width="888" height="238" rx="16" stroke="#30363d" stroke-width="2" fill="#0d1117"/>
-<text x="28" y="38" font-size="21" font-family="Arial,sans-serif" font-weight="bold" fill="#e6edf3">GitHub engineering activity</text>
-<rect x="28" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
-<text x="108" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">48</text>
-<text x="108" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Repositories</text>
-<rect x="200" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
-<text x="280" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">29</text>
-<text x="280" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Public</text>
-<rect x="372" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
-<text x="452" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">19</text>
-<text x="452" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Private</text>
-<rect x="544" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
-<text x="624" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">45</text>
-<text x="624" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Authored PRs</text>
-<rect x="716" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>
-<text x="796" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">241</text>
-<text x="796" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">Commits YTD</text>
-<text x="28" y="215" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authenticated aggregates · Default-branch commits authored since Jan 1 · Updated 29 Oct 2026 11:30 UTC</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="288" viewBox="0 0 540 288" role="img" aria-label="Authenticated GitHub engineering activity">
+<rect x="1" y="1" width="538" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+<text x="23" y="35" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#e6edf3">GitHub Stats</text>
+<text x="23" y="54" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authorized public + private activity</text>
+<text x="28" y="84" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Repositories</text>
+<text x="498" y="86" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">48</text>
+<path d="M23 93 H517" stroke="#30363d" stroke-width="1"/>
+<text x="28" y="117" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Public</text>
+<text x="498" y="119" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">29</text>
+<path d="M23 126 H517" stroke="#30363d" stroke-width="1"/>
+<text x="28" y="150" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Private</text>
+<text x="498" y="152" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">19</text>
+<path d="M23 159 H517" stroke="#30363d" stroke-width="1"/>
+<text x="28" y="183" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Authored PRs</text>
+<text x="498" y="185" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">45</text>
+<path d="M23 192 H517" stroke="#30363d" stroke-width="1"/>
+<text x="28" y="216" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">Commits YTD</text>
+<text x="498" y="218" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">241</text>
+<text x="23" y="271" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Updated 29 Oct 2026 11:30 UTC  |  commits on default branches</text>
 </svg>
