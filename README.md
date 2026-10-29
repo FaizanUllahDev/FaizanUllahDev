@@ -78,7 +78,10 @@ Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard p
 
 </div>
 
-<sub>The stats card updates from [GitHub Actions](.github/workflows/profile-metrics.yml) using your authorized token. It aggregates public and accessible private repositories without publishing private names, contents, or individual activity. **Commits YTD** counts authored commits on accessible default branches since January 1, not every branch or every GitHub contribution. The language chart and 90-day trend use a separate public-data provider; both may be cached. There is no fabricated performance grade.</sub>
+<sub>The stats card updates from [GitHub Actions](.github/workflows/profile-metrics.yml) using your authorized token. It aggregates public and accessible private repositories without publishing private names, contents, or individual activity. **Commits YTD** counts authored commits on accessible default branches since January 1, not every branch or every GitHub contribution. The language chart and 90-day trend use a separate public-data provider; both may be cached. The circular activity tier is computed from documented commit/PR thresholds rather than inferred code quality.</sub>
+
+
+**Activity tier:** A+ means at least 200 authored default-branch commits this year **and** 25 authored PRs; A means 100 commits and 10 PRs; B means 25 commits or 5 PRs; otherwise C. This is an illustrative activity tier, **not a GitHub-issued rating or a code-quality assessment**.
 
 **Explore:** [Authored pull requests](https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev) · [Commit search](https://github.com/search?q=author%3AFaizanUllahDev&type=commits) · [Contributions](https://github.com/FaizanUllahDev)
 
