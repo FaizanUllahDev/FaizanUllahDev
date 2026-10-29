@@ -55,13 +55,27 @@ def pages(path,params={},max_pages=80):
     raise RuntimeError("Incomplete pagination")
 
 def render(counts):
-    labels=[("Repositories",counts["total"]),("Public",counts["public"]),("Private",counts["private"]),("Authored PRs",counts["prs"]),("Commits YTD",counts["commits"])]
-    out=['<svg xmlns="http://www.w3.org/2000/svg" width="890" height="240" viewBox="0 0 890 240" role="img" aria-label="Aggregated GitHub activity">','<rect x="1" y="1" width="888" height="238" rx="16" stroke="#30363d" stroke-width="2" fill="#0d1117"/>','<text x="28" y="38" font-size="21" font-family="Arial,sans-serif" font-weight="bold" fill="#e6edf3">GitHub engineering activity</text>']
-    for i,(label,value) in enumerate(labels):
-        x=28+i*172
-        out+=['<rect x="%s" y="76" width="160" height="107" rx="9" fill="#161b22" stroke="#30363d"/>'%x,'<text x="%s" y="122" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#79c0ff">%s</text>'%(x+80,html.escape(str(value))),'<text x="%s" y="151" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" fill="#c9d1d9">%s</text>'%(x+80,html.escape(label))]
-    out+=['<text x="28" y="215" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authenticated aggregates · Default-branch commits authored since Jan 1 · Updated %s UTC</text>'%counts["date"],'</svg>']
-    return "\n".join(out)+"\n"
+    """Compact, high-contrast SVG beside the public language chart."""
+    labels = [("Repositories", counts["total"]), ("Public", counts["public"]),
+              ("Private", counts["private"]), ("Authored PRs", counts["prs"]),
+              ("Commits YTD", counts["commits"])]
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="540" height="288" viewBox="0 0 540 288" role="img" aria-label="Authenticated GitHub engineering activity">',
+           '<rect x="1" y="1" width="538" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>',
+           '<text x="23" y="35" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#e6edf3">GitHub Stats</text>',
+           '<text x="23" y="54" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authorized public + private activity</text>']
+    for i, (label, value) in enumerate(labels):
+        y = 84 + i * 33
+        out.append('<text x="28" y="%s" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">%s</text>' %
+                   (y, html.escape(label)))
+        out.append('<text x="498" y="%s" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">%s</text>' %
+                   (y + 2, html.escape(str(value))))
+        if i < len(labels) - 1:
+            out.append('<path d="M23 %s H517" stroke="#30363d" stroke-width="1"/>' % (y + 9))
+    out.append('<text x="23" y="271" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Updated %s UTC  |  commits on default branches</text>' %
+               html.escape(counts["date"]))
+    out.append('</svg>')
+    return "\\n".join(out).replace("\\n", "\n") + "\n"
+
 
 if not TOKEN:raise SystemExit("Configure GH_METRICS_TOKEN repository Actions secret first")
 me=get("/user")
