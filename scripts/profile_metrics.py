@@ -15,10 +15,29 @@ def get(path,params={}):
         try:
             with urllib.request.urlopen(req,timeout=25) as response: return json.load(response)
         except urllib.error.HTTPError as error:
+            remaining = error.headers.get("X-RateLimit-Remaining", "unknown")
+            reset = error.headers.get("X-RateLimit-Reset", "unknown")
+            accepted = error.headers.get("X-Accepted-GitHub-Permissions", "not specified")
             if error.code in (429,500,502,503,504) and retry<2:
                 time.sleep(2**retry)
                 continue
-            raise
+            if error.code == 403:
+                if remaining == "0":
+                    raise RuntimeError("GitHub API rate limit exhausted; reset epoch %s. Previous metrics preserved." % reset) from None
+                raise RuntimeError(
+                    "GitHub returned HTTP 403 when accessing a %s endpoint. "
+                    "Required API permissions: %s. Verify GH_METRICS_TOKEN has "
+                    "Contents: Read for each selected private/public repository; "
+                    "organization repositories may require separate owner approval. "
+                    "No partial chart will be published." %
+                    ("commit-history" if path.endswith("/commits") else "other", accepted)
+                ) from None
+            if error.code == 404:
+                raise RuntimeError(
+                    "Repository/API path not available to GH_METRICS_TOKEN (HTTP 404). "
+                    "Check selected repository access and Contents: Read; no partial chart published."
+                ) from None
+            raise RuntimeError("GitHub API returned HTTP %s; previous chart preserved" % error.code) from None
     raise RuntimeError("GitHub API unavailable")
 
 def pages(path,params={},max_pages=80):
