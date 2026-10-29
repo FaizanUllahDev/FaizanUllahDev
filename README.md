@@ -2,7 +2,7 @@
 
 # Faizan Ullah
 
-### Senior Software Engineer · Flutter & Mobile Architecture · FinTech · Applied AI
+### Senior Mobile Engineer (Flutter) · Constelle Business Solutions · FinTech & Telco
 
 **6+ years building secure, maintainable, production-grade software across Android, iOS, and the web.**
 
@@ -23,20 +23,39 @@
 
 ## What I build
 
-I am a senior mobile/software engineer specializing in **Flutter, native mobile integration, secure fintech systems, and AI-enabled products**. My experience includes banking integrations, payment and retail/POS workflows, real-time media products, and the engineering practices needed to support them in production.
+I am a **Senior Mobile Engineer (Flutter) at Constelle Business Solutions**, specializing in scalable Flutter applications for high-volume **FinTech and telecom** products. My experience spans secure financial workflows, digital self-care, payment integrations, retail/POS systems, and native Android/iOS engineering.
 
-- **Secure mobile engineering:** Android/iOS native modules, platform channels, secure storage, app hardening, and enterprise integrations.
-- **Architecture & quality:** Clean Architecture, MVVM/MVI, SOLID, BLoC/Cubit, Riverpod, TDD, and automated testing.
+- **Secure mobile engineering:** Android/iOS native modules, platform channels, secure storage, DexGuard/iXGuard hardening, and protection against reverse engineering and tampering.
+- **Architecture & quality:** Clean Architecture, MVVM/MVI, SOLID, BLoC/GetX/Cubit/Riverpod, TDD, and automated testing.
 - **Delivery:** Release engineering, CI/CD, Fastlane, Docker, and cross-functional collaboration.
 - **Current direction:** AI-assisted development with human review gates, system design, distributed systems, and solution architecture.
 
-### Professional engineering experience
+### Professional experience
 
-**American Express KSA — enterprise fintech:** Flutter engineering for regulated financial workflows, API integrations, Arabic/RTL experiences, and secure mobile delivery.
+**Senior Mobile Engineer (Flutter) — Constelle Business Solutions**  
+*August 2026 – Present · Islamabad, Pakistan · On-site*
 
-**DTEK.ai — retail and POS platforms:** Cross-platform cashier, kiosk, and commerce workflows involving payment peripherals, real-time features, and operational dashboards.
+- Architecting scalable, high-performance Flutter applications for high-volume fintech and telecom ecosystems.
+- Securing Android/iOS mobile builds with DexGuard and iXGuard to mitigate reverse engineering and tampering risks.
+- Using AI-assisted tools in engineering workflows and product feature development.
+- Improving maintainability and delivery with Clean Architecture, BLoC/GetX, and automated CI/CD.
 
-These are professional product experiences; proprietary source code is not published here.
+**Featured product: Yas App** — Telecom digital self-care, account management, and secure payment experiences built with Flutter.
+
+**Senior Mobile Engineer (Flutter) — Veroke**  
+*November 2024 – August 2026 · Islamabad, Pakistan · On-site*
+
+- Built security-focused fintech mobile solutions for the Saudi market, integrating SADAD and Tarabut payment flows and supporting compliance requirements.
+- Applied test-driven development to critical financial transaction workflows.
+- Implemented iOS/Android release automation with Fastlane and GitHub Actions, secure code signing, and multi-environment versioning.
+- Improved mobile application startup and transaction performance through targeted profiling and architecture optimizations.
+
+**Featured product: American Express KSA** — Production fintech application supporting secure transactions, enterprise integrations, and localization.
+
+**Earlier experience — DTEK.ai**  
+Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard products, including payment peripheral integrations and realtime functionality.
+
+*Enterprise client and employer source code is proprietary; public repositories below contain independently shared projects.*
 
 ## GitHub engineering activity
 
