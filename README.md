@@ -61,12 +61,12 @@ Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard p
 
 <div align="center">
 
-**Verified GitHub account totals · 29 October 2026**
+**Authenticated GitHub snapshot · 29 October 2026 · not live counters**
 
-<a href="https://github.com/FaizanUllahDev?tab=repositories"><img alt="48 repositories accessible to account" src="https://img.shields.io/badge/Repositories-48-2563EB?style=for-the-badge"></a>
-<img alt="27 public repositories" src="https://img.shields.io/badge/Public-27-0F766E?style=for-the-badge">
+<a href="https://github.com/FaizanUllahDev?tab=repositories"><img alt="50 repositories accessible to account" src="https://img.shields.io/badge/Repositories-50-2563EB?style=for-the-badge"></a>
+<img alt="29 public repositories" src="https://img.shields.io/badge/Public-29-0F766E?style=for-the-badge">
 <img alt="21 private repositories" src="https://img.shields.io/badge/Private-21-64748B?style=for-the-badge">
-<a href="https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev"><img alt="Authored PRs from all accessible repositories: currently 10" src="https://img.shields.io/badge/Authored%20PRs-10-7C3AED?style=for-the-badge"></a>
+<a href="https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev"><img alt="Authored PRs found across accessible repositories: 38" src="https://img.shields.io/badge/Authored%20PRs-38-7C3AED?style=for-the-badge"></a>
 
 <br><br>
 
@@ -88,7 +88,7 @@ Worked on cross-platform retail, cashier/kiosk, POS, and operational dashboard p
 
 </div>
 
-<sub>**Scope and accuracy:** Repository totals and authored PRs are authenticated GitHub snapshots across repositories accessible to this account, including private repositories, on 29 October 2026. The PR counter is a dated snapshot, not a live public widget, and includes cross-repository contributions. The charts below use public GitHub data and refresh automatically; they **do not** represent all private commits or contributions. A secure authenticated refresh integration is needed to publish automatically updated combined private+public totals without revealing private repository details. Language proportions describe repository composition, not skill proficiency.</sub>
+<sub>**Scope and accuracy:** Repository totals and authored PRs are authenticated GitHub snapshots across repositories accessible to this account, including private repositories, on 29 October 2026. The PR counter reports 38 authored PRs returned by the connected GitHub search, across accessible repositories (including cross-repository contributions), at the snapshot time. The badges are fixed values embedded in README.md, so they **do not update when you commit, open a PR, or create a repository**. The charts below use public GitHub data and refresh automatically; they **do not** represent all private commits or contributions. Automatically refreshed combined private+public counts require a separate authenticated integration with access to all relevant repositories and a recurring update mechanism. No GitHub Actions or tokens have been added. Language proportions describe repository composition, not skill proficiency.</sub>
 
 **Inspect activity:** [Authored pull requests](https://github.com/pulls?q=is%3Apr+author%3AFaizanUllahDev) · [Commit search](https://github.com/search?q=author%3AFaizanUllahDev&type=commits) · [Your contribution calendar](https://github.com/FaizanUllahDev)
 
