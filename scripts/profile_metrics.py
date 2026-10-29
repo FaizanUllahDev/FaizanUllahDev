@@ -55,26 +55,28 @@ def pages(path,params={},max_pages=80):
     raise RuntimeError("Incomplete pagination")
 
 def render(counts):
-    """Compact, high-contrast SVG beside the public language chart."""
-    labels = [("Repositories", counts["total"]), ("Public", counts["public"]),
-              ("Private", counts["private"]), ("Authored PRs", counts["prs"]),
-              ("Commits YTD", counts["commits"])]
-    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="540" height="288" viewBox="0 0 540 288" role="img" aria-label="Authenticated GitHub engineering activity">',
-           '<rect x="1" y="1" width="538" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>',
-           '<text x="23" y="35" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#e6edf3">GitHub Stats</text>',
-           '<text x="23" y="54" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Authorized public + private activity</text>']
-    for i, (label, value) in enumerate(labels):
-        y = 84 + i * 33
-        out.append('<text x="28" y="%s" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">%s</text>' %
-                   (y, html.escape(label)))
-        out.append('<text x="498" y="%s" text-anchor="end" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">%s</text>' %
-                   (y + 2, html.escape(str(value))))
-        if i < len(labels) - 1:
-            out.append('<path d="M23 %s H517" stroke="#30363d" stroke-width="1"/>' % (y + 9))
-    out.append('<text x="23" y="271" font-size="11" font-family="Arial,sans-serif" fill="#8b949e">Updated %s UTC  |  commits on default branches</text>' %
-               html.escape(counts["date"]))
-    out.append('</svg>')
-    return "\\n".join(out).replace("\\n", "\n") + "\n"
+    """Render accurate account stats and a clearly defined activity tier."""
+    tier = "A+" if counts["commits"] >= 200 and counts["prs"] >= 25 else (
+        "A" if counts["commits"] >= 100 and counts["prs"] >= 10 else
+        "B" if counts["commits"] >= 25 or counts["prs"] >= 5 else "C")
+    items = [("Repositories", counts["total"]), ("Public / private", "%s / %s" % (counts["public"], counts["private"])),
+             ("Commits YTD", counts["commits"]), ("Authored PRs", counts["prs"])]
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="620" height="288" viewBox="0 0 620 288" role="img" aria-label="Authenticated GitHub statistics and activity tier">',
+           '<rect x="1" y="1" width="618" height="286" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>',
+           '<text x="26" y="41" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#e6edf3">GitHub Stats</text>',
+           '<text x="26" y="65" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Authorized public + private activity</text>']
+    for i, (label, value) in enumerate(items):
+        y = 105 + i * 38
+        out.append('<text x="34" y="%s" font-size="15" font-family="Arial,sans-serif" fill="#c9d1d9">%s</text>' % (y, html.escape(label)))
+        out.append('<text x="325" y="%s" text-anchor="end" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#79c0ff">%s</text>' % (y+2, html.escape(str(value))))
+    out.extend([
+        '<circle cx="487" cy="142" r="70" fill="none" stroke="#30363d" stroke-width="13"/>',
+        '<circle cx="487" cy="142" r="70" fill="none" stroke="#79c0ff" stroke-width="13" stroke-dasharray="330 440" transform="rotate(-90 487 142)" stroke-linecap="round"/>',
+        '<text x="487" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#e6edf3">%s</text>' % html.escape(tier),
+        '<text x="487" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#8b949e">Activity tier</text>',
+        '<text x="26" y="272" font-family="Arial,sans-serif" font-size="11" fill="#8b949e">Updated %s UTC · default-branch commits</text>' % html.escape(counts["date"]),
+        '</svg>'])
+    return "\n".join(out) + "\n"
 
 
 if not TOKEN:raise SystemExit("Configure GH_METRICS_TOKEN repository Actions secret first")
