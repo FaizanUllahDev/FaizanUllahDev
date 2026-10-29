@@ -5,6 +5,10 @@ USER=os.environ.get("PROFILE_LOGIN","FaizanUllahDev")
 TOKEN=os.environ.get("GH_METRICS_TOKEN","")
 DEST=Path("assets/github-metrics.svg")
 calls=0
+class EmptyCommitHistory(Exception):
+    """GitHub reports an empty/uninitialized Git repository."""
+
+
 def get(path,params={}):
     global calls
     if calls>=450: raise RuntimeError("API budget exceeded")
@@ -32,6 +36,8 @@ def get(path,params={}):
                     "No partial chart will be published." %
                     ("commit-history" if path.endswith("/commits") else "other", accepted)
                 ) from None
+            if error.code == 409 and path.endswith("/commits"):
+                raise EmptyCommitHistory() from None
             if error.code == 404:
                 raise RuntimeError(
                     "Repository/API path not available to GH_METRICS_TOKEN (HTTP 404). "
@@ -67,7 +73,14 @@ commits=0
 for r in repos:
     if not r.get("default_branch") or r.get("disabled") or r.get("archived"):continue
     path="/repos/"+"/".join(urllib.parse.quote(p,safe="") for p in r["full_name"].split("/"))+"/commits"
-    for _ in pages(path,{"sha":r["default_branch"],"author":USER,"since":since},max_pages=30): commits+=1
+    try:
+        for _ in pages(path,{"sha":r["default_branch"],"author":USER,"since":since},max_pages=30):
+            commits+=1
+    except EmptyCommitHistory:
+        # GitHub returns HTTP 409 for empty / not-yet-initialized Git histories.
+        # Do not ignore other API errors; those may indicate partial counts.
+        print("Skipping repository without available commit history")
+        continue
 prs=get("/search/issues",{"q":"type:pr author:"+USER,"per_page":1})
 if prs.get("incomplete_results"):raise RuntimeError("Incomplete PR search")
 counts={"total":len(repos),"public":len(repos)-private,"private":private,"prs":prs["total_count"],"commits":commits,"date":dt.datetime.now(dt.timezone.utc).strftime("%d %b %Y %H:%M")}
